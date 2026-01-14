@@ -54,8 +54,6 @@ class NumberGuessingGame {
         this.submitBtn.disabled = false;
         this.historyList.innerHTML = '';
         this.showMessage('message-welcome', 'info');
-        
-        console.log('New game started. Target number:', this.targetNumber); // For debugging
     }
 
     handleGuess() {

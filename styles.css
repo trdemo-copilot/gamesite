@@ -227,10 +227,6 @@ footer {
     }
 
     .language-switcher {
-        flex-direction: column;
-    }
-
-    .lang-btn {
-        width: 100%;
+        flex-wrap: wrap;
     }
 }

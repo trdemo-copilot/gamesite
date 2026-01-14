@@ -102,7 +102,7 @@ class I18n {
         // Update document title
         document.title = this.translate('page-title');
         
-        // Update input placeholder
+        // Update input placeholder separately since it uses a different key than its id
         const guessInput = document.getElementById('guess-input');
         if (guessInput) {
             guessInput.placeholder = this.translate('placeholder');
