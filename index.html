@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="game-title">Number Guessing Game</h1>
+            <div class="language-switcher">
+                <button class="lang-btn" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="zh">中文</button>
+                <button class="lang-btn" data-lang="ja">日本語</button>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-section">
+                <p id="game-description" class="description"></p>
+                
+                <div class="game-stats">
+                    <div class="stat">
+                        <span id="attempts-label">Attempts:</span>
+                        <span id="attempts-count">0</span>
+                    </div>
+                    <div class="stat">
+                        <span id="range-label">Range:</span>
+                        <span id="range-value">1-100</span>
+                    </div>
+                </div>
+
+                <div class="game-controls">
+                    <input type="number" id="guess-input" min="1" max="100" placeholder="Enter your guess">
+                    <button id="submit-btn" class="btn-primary">Submit</button>
+                    <button id="reset-btn" class="btn-secondary">New Game</button>
+                </div>
+
+                <div id="message" class="message"></div>
+                <div id="history" class="history">
+                    <h3 id="history-title">Guess History</h3>
+                    <ul id="history-list"></ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footer-text">A demo for GitHub Copilot Workspace with multi-language support</p>
+        </footer>
+    </div>
+
+    <script src="i18n.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
